@@ -1,0 +1,107 @@
+{
+  "Markdown - Heading 1": {
+    "scope": "markdown",
+    "prefix": "snip.heading_1",
+    "body": "snippet",
+    "description": "Markdown syntax to make largest heading"
+  },
+  "Markdown - Heading 2": {
+    "scope": "markdown",
+    "prefix": "snip.heading_2",
+    "body": "snippet",
+    "description": "Markdown syntax to make second-largest heading"
+  },
+  "Markdown - Heading 3": {
+    "scope": "markdown",
+    "prefix": "snip.heading_3",
+    "body": "snippet",
+    "description": "Markdown syntax to make third-largest heading"
+  },
+  "Markdown - Bold": {
+    "scope": "markdown",
+    "prefix": "snip.bold",
+    "body": "snippet",
+    "description": "Markdown syntax to make selected text bold"
+  },
+  "Markdown - Italic": {
+    "scope": "markdown",
+    "prefix": "snip.italic",
+    "body": "snippet",
+    "description": "Markdown syntax to make selected text italic"
+  },
+  "Markdown - Blockquote": {
+    "scope": "markdown",
+    "prefix": "snip.blockquote",
+    "body": "snippet",
+    "description": "Markdown syntax to make a blockquote"
+  },
+  "Markdown - Ordered List": {
+    "scope": "markdown",
+    "prefix": "snip.list_ordered",
+    "body": "snippet",
+    "description": "Markdown syntax to make an ordered list"
+  },
+  "Markdown - Unordered List": {
+    "scope": "markdown",
+    "prefix": "snip.heading_2",
+    "body": "snippet",
+    "description": "Markdown syntax to make an unordered list"
+  },
+  "Markdown - Inline Code": {
+    "scope": "markdown",
+    "prefix": "snip.code_inline",
+    "body": "snippet",
+    "description": "Markdown syntax to make a code inline"
+  },
+  "Markdown - Code Block": {
+    "scope": "markdown",
+    "prefix": "snip.code_block",
+    "body": "snippet",
+    "description": "Markdown syntax to make a code block"
+  },
+  "Markdown - Horizontal Rule": {
+    "scope": "markdown",
+    "prefix": "snip.horizontal_line",
+    "body": "snippet",
+    "description": "Markdown syntax to make a horizontal rule"
+  },
+  "Markdown - External Link": {
+    "scope": "markdown",
+    "prefix": "snip.link_http",
+    "body": "snippet",
+    "description": "Markdown syntax to make a Link"
+  },
+  "Markdown - Reference Link - Top": {
+    // See https://www.markdownguide.org/basic-syntax/#links
+    "scope": "markdown",
+    "prefix": "snip.link_http_small_top",
+    "body": "snippet",
+    "description": "Markdown syntax to make a Reference Link in-line"
+  },
+  "Markdown - Reference Link - Bottom": {
+    "scope": "markdown",
+    "prefix": "snip.link_http_small_bottom",
+    "body": "snippet",
+    "description": "Markdown syntax to make a Reference Link source below"
+  },
+  "Markdown - Internal Link": {
+    //[Heading IDs](#heading-ids)
+    "scope": "markdown",
+    "prefix": "snip.link_http",
+    "body": "snippet",
+    "description": "Markdown syntax to make an Internal Link"
+  },
+  "Markdown - Image": {
+    "scope": "markdown",
+    "prefix": "snip.image",
+    "body": "snippet",
+    "description": "Markdown syntax to add an image"
+  },
+  "Markdown - Comment": {
+    // See https://www.markdownguide.org/hacks/#comments
+    "scope": "markdown",
+    "prefix": "snip.comment",
+    "body": "snippet",
+    "description": "Markdown syntax to add a non-rendering comment"
+  }
+}
