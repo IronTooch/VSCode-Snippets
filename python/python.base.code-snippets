@@ -1,0 +1,181 @@
+{
+  "Python Main Class Shell": {
+    "prefix": "",
+    "body": [
+      "#!/usr/bin/env python",
+      "\"\"\" A main function script to do ${1:script_purpose} \"\"\"",
+      "",
+      "__author__      = \"Steve Tuccio\"",
+      "__version__     = \"0.0.1\"",
+      "__maintainer__  = \"Steve Tuccio\"",
+      // "__email__       = \"steven.v.tuccio@wellsfargo.com\"",
+      "__email__       = \"${2:create_date}\"",
+      "__status__      = \"Dev\"",
+      "",
+      "#region Imports",
+      "",
+      "import argparse",
+      "import collections",
+      "import json",
+      "import os",
+      "import sys",
+      "from concurrent.futures import ThreadPoolExecutor",
+      "from dataclasses import dataclass",
+      "from datetime import datetime",
+      "from enum import Enum, IntEnum",
+      "from functools import reduce",
+      "from io import TextIOWrapper",
+      "from queue import Queue",
+      "from threading import Event, Thread",
+      "import requests",
+      "",
+      "#endregion",
+      "",
+      "#region Init",
+      "",
+      "#endregion",
+      "",
+      "#region Contants",
+      "",
+      "#endregion",
+      "",
+      "#region Configurable Variables",
+      "requests.packages.urllib3.disable_warnings()",
+      "",
+      "#endregion",
+      "",
+      "#region Enums",
+      "",
+      "#endregion",
+      "",
+      "#region Classes",
+      "",
+      "#endregion",
+      "",
+      "#region functions",
+      "",
+      "def main():",
+      "  pass",
+      "",
+      "#endregion",
+      "",
+      "#region Main",
+      "",
+      "print(\"Start Time: \" + (datetime.now().strftime(\"%H:%M:%S\")))",
+      "",
+      "main()",
+      "",
+      "print(\"End Time:   \" + (datetime.now().strftime(\"%H:%M:%S\")))",
+      "",
+      "#endregion",
+      ""
+    ],
+    "scope": "python",
+    "description": "Python Main Class Shell"
+  },
+  "Class for storing mostly data": {
+    "prefix": "snip.DataClass",
+    "body": [
+      "@dataclass(order=True)",
+      "class ${1:CLASS_NAME}:",
+      "  \"\"\" A class to represent ${1:CLASS_NAME} objects \"\"\"",
+      "  str${2:STRING_KEY}: str = '${3:STRING_VALUE}'",
+      "  int${4:INT_KEY}: int = field(default=${5:INT_DEFAULT_VAL}, metadata={'unit': '${6:millimeters}'})",
+      "  bol${7:BOOL_KEY}: bool = ${8|False,True|}"
+    ],
+    "scope": "python",
+    "description": "Class for storing mostly data"
+  },
+  "Strings Enum": {
+    "prefix": "snip.StringEnum",
+    "body": [
+      "class ${1:ENUM_NAME}(str, Enum):",
+      "  \"\"\" String Enumeration of ${1:ENUM_NAME}\"\"\"",
+      "  ${2:FIRST_KEY} = '${3:FIRST_VALUE}'",
+      "  ${4:SECOND_KEY} = '${5:SECOND_VALUE}'",
+      " ",
+      "  ${6:GROUP_OF_KEYS} = [${2:FIRST_KEY}, ${4:SECOND_KEY}]",
+      "",
+      "",
+      "  def isIn${6:GROUP_OF_KEYS}(self) -> bool:",
+      "    \"\"\"",
+      "    Confirms ${1:ENUM_NAME} is a part of ${6:GROUP_OF_KEYS}.",
+      "      ",
+      "    Returns:",
+      "      boolean: True if ${1:ENUM_NAME} is a part of ${6:GROUP_OF_KEYS}, else False.",
+      "    \"\"\"",
+      "    return self in self.${6:GROUP_OF_KEYS}",
+      "  ",
+      "  def __str__(self) -> str:",
+      "    \"\"\" String value of ${1:ENUM_NAME}\"\"\"",
+      "    return self.value"
+    ],
+    "scope": "python",
+    "description": "Enum for Strings"
+  },
+  "String Variable": {
+    "prefix": "snip.strVar",
+    "body": [
+      "str${1:Variable_Name}: str = '${2:Variable_value}'",
+      "$0"
+    ],
+    "scope": "python",
+    "description": "String Variable"
+  },
+  "TODO Comment": {
+    "prefix": "snip.TODO",
+    "body": [
+      "# TODO(Steve Tuccio): ${1:What_needs_to_be_done}.",
+      "$0"
+    ],
+    "scope": "python",
+    "description": "TODO Comment"
+  },
+  "print": {
+    "prefix": "snip.prt",
+    "body": [
+      "print(${1:Variable_value})",
+      "$0"
+    ],
+    "scope": "python",
+    "description": "print"
+  },
+  "Python Function Shell - Big": {
+    "prefix": "snip.def_big",
+    "body": [
+      "def ${2:function_name}(${2:function_input_var}: str) -> str:",
+      "  \"\"\"${3:function_description}.",
+      "",
+      "  Args:",
+      "    ${4:argument_name}: ${5:argument_description}.",
+      "",
+      "  Returns:",
+      "    ${6:return_value}.",
+      "",
+      "  Raises:",
+      "    ${7:ExceptionType}: If ${8:situation_occurs}.",
+      "  \"\"\"",
+      "  pass"
+    ],
+    "scope": "python",
+    "description": "Python Function Shell"
+  },
+  "Python Function Shell - Small": {
+    "prefix": "snip.def_small",
+    "body": [
+      "def ${2:function_name}(${2:function_input_var}: str) -> str:",
+      "  \"\"\"${3:function_description}.",
+      "",
+      "  Args:",
+      "    ${4:argument_name}: ${5:argument_description}.",
+      "",
+      "  Returns:",
+      "    ${6:return_value}.",
+      "  \"\"\"",
+      "  pass"
+    ],
+    "scope": "python",
+    "description": "Python Function Shell - Small"
+  }
+
+}
