@@ -1,0 +1,33 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "Install Snippets Globally",
+        "detail": "Deploys to local Linux Global Snippet location",
+        "type": "shell",
+        "linux": {
+            "command": "/bin/bash .vscode/installers/installer.sh"
+        },
+        "windows": {
+            "options": {
+                "shell": {
+                    "executable": "powershell",
+                    "args": [
+                        "-ExecutionPolicy Bypass",
+                        "-File"
+                    ]
+                }
+            },
+            "command": ".vscode/installers/installer.ps1"
+        },
+        "presentation": {
+            "reveal": "always",
+            "panel": "dedicated",
+            "clear": true,
+            "showReuseMessage": false
+        }
+    }
+]
+}
