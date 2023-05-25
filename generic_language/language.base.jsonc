@@ -1,0 +1,34 @@
+{
+  // Base Function File
+  "language_name - Single File": {
+    // 01. Shebang or equivalent (i.e. mandatory first line thing)
+    // 02. Header comment
+    // 03. Imports
+    // 04. Init
+    // 05. Constants
+    // 06. Configurable Variables (because of potential Constants Dependencies)
+    // 07. Enums
+    // 08. Classes
+    // 09. Functions
+    // 10. Main
+    // 10. Close
+    "scope": "language_vscode",
+    "prefix": "snip.newfile_single",
+    "body": "snippet",
+    "description": "Basic template for a single-file script for language_name"
+  },
+  "language_name - Supplementary File": {
+    "scope": "language_vscode",
+    "prefix": "snip.newfile_supp",
+    "body": "snippet",
+    "description": "Basic template for a supplement file for language_name"
+  },
+  "language_name - TODO": {
+    // Example: 
+    "scope": "language_vscode",
+    "prefix": "snip.TODO",
+    "body": "snippet",
+    "description": "TODO comment for language"
+  }
+}
+
