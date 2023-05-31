@@ -1,4 +1,22 @@
 {
+  "Markdown - Warning Icon": {
+    "scope": "markdown",
+    "prefix": "snip.warning",
+    "body": ":warning:",
+    "description": "Markdown syntax to make a warning icon"
+  },
+  "Markdown - Memo Icon": {
+    "scope": "markdown",
+    "prefix": "snip.memo",
+    "body": ":memo:",
+    "description": "Markdown syntax to make a memo icon"
+  },
+  "Markdown - Watch Icon": {
+    "scope": "markdown",
+    "prefix": "snip.tip",
+    "body": ":watch:",
+    "description": "Markdown syntax to make a watch icon"
+  }
   //https://www.markdownguide.org/extended-syntax/#emoji
   //https://www.markdownguide.org/extended-syntax/#subscript
   //https://www.markdownguide.org/extended-syntax/#superscript

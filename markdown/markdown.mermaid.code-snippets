@@ -1,1 +1,16 @@
-{}
+{
+  "Markdown - Mermaid Diagram": {
+    "scope": "markdown",
+    "prefix": "snip.mermaid",
+    "body": [
+      "```mermaid",
+      "graph TD;",
+      "    A-->B;",
+      "    A-->C;",
+      "    B-->D;",
+      "    C-->D;",
+      "```"
+    ],
+    "description": "Markdown syntax to make a mermaid diagram"
+  }
+}

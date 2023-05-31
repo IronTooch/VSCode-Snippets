@@ -1,4 +1,17 @@
 {
-  //https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams
-  //https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections
+  "Markdown - Table": {
+    "scope": "markdown",
+    "prefix": "snip.collapsed_section",
+    "body": [
+      "<details>",
+      "",
+      "<summary>${1:shown_when_collapsed}</summary>",
+      "",
+      "${2:hidden_extra_data}",
+      "",
+      "</details>",
+      ""
+    ],
+    "description": "Markdown syntax to make a collapsed section in extended markdown syntax"
+  }
 }

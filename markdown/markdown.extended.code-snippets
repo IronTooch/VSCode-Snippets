@@ -2,42 +2,18 @@
   "Markdown - Table": {
     "scope": "markdown",
     "prefix": "snip.table",
-    "body": "snippet",
+    "body": [
+      "| ${1:header_1}  | ${2:header_2}   |",
+      "| -------------- | --------------- |",
+      "| ${3:content_1} | ${4:content_2}  |"
+    ],
     "description": "Markdown syntax to make a table"
-  },
-  "Markdown - Admonitions": {
-    //https://www.markdownguide.org/hacks/#admonitions
-    "scope": "markdown",
-    "prefix": "snip.table",
-    "body": "snippet",
-    "description": "Markdown syntax to make admonitions"
-  },
-  "Markdown - TableOfContents": {
-    //https://www.markdownguide.org/hacks/#table-of-contents
-    "scope": "markdown",
-    "prefix": "snip.table",
-    "body": "snippet",
-    "description": "Markdown syntax to make a table of contents"
-  },
-  "Markdown - Color": {
-    //https://www.markdownguide.org/hacks/#color
-    "scope": "markdown",
-    "prefix": "snip.table",
-    "body": "snippet",
-    "description": "Markdown syntax to make a color section"
   },
   "Markdown - strikethrough": {
     //https://www.markdownguide.org/extended-syntax/#strikethrough
     "scope": "markdown",
-    "prefix": "snip.table",
-    "body": "snippet",
+    "prefix": "snip.strikethrough",
+    "body": "~~${TM_SELECTED_TEXT}~~",
     "description": "Markdown syntax to do a strikethrough"
-  },
-  "Markdown - Task List": {
-    //https://www.markdownguide.org/extended-syntax/#task-lists
-    "scope": "markdown",
-    "prefix": "snip.table",
-    "body": "snippet",
-    "description": "Markdown syntax to make a task list"
   }
 }
