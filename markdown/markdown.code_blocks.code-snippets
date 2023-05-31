@@ -1,1 +1,18 @@
-{}
+{
+  "Markdown - Inline Code": {
+    "scope": "markdown",
+    "prefix": "snip.code_inline",
+    "body": "`${TM_SELECTED_TEXT}`",
+    "description": "Markdown syntax to make a code inline"
+  },
+  "Markdown - Code Block": {
+    "scope": "markdown",
+    "prefix": "snip.code_block",
+    "body": [
+      "```${1:language}",
+      "${2:my_code}",
+      "```"
+    ],
+    "description": "Markdown syntax to make a code block"
+  }
+}

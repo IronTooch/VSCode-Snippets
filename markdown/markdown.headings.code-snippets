@@ -1,0 +1,49 @@
+{
+  "Markdown - Heading 1": {
+    "scope": "markdown",
+    "prefix": "snip.heading_1",
+    "body": [
+      "${1:header}",
+      "===============================================================================",
+      "$0"
+    ],
+    "description": "Markdown syntax to make largest heading"
+  },
+  "Markdown - Heading 2": {
+    "scope": "markdown",
+    "prefix": "snip.heading_2",
+    "body": [
+      "${1:header}",
+      "-------------------------------------------------------------------------------",
+      "$0"
+    ],
+    "description": "Markdown syntax to make second-largest heading"
+  },
+  "Markdown - Heading 3": {
+    "scope": "markdown",
+    "prefix": "snip.heading_3",
+    "body": [
+      "### ${1:header}",
+      "$0"
+    ],
+    "description": "Markdown syntax to make third-largest heading"
+  },
+  "Markdown - Heading 4": {
+    "scope": "markdown",
+    "prefix": "snip.heading_4",
+    "body": [
+      "#### ${1:header}",
+      "$0"
+    ],
+    "description": "Markdown syntax to make fourth-largest heading"
+  },
+  "Markdown - Heading 5": {
+    "scope": "markdown",
+    "prefix": "snip.heading_5",
+    "body": [
+      "##### ${1:header}",
+      "$0"
+    ],
+    "description": "Markdown syntax to make fifth-largest heading"
+  }
+}

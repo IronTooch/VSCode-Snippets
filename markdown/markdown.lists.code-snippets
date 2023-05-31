@@ -1,0 +1,22 @@
+{
+  "Markdown - Ordered List": {
+    "scope": "markdown",
+    "prefix": "snip.list_ordered",
+    "body": [
+      "1. ${1:item_1}",
+      "2. ${2:item_2}",
+      "3. ${3:item_3}"
+    ],
+    "description": "Markdown syntax to make an ordered list"
+  },
+  "Markdown - Unordered List": {
+    "scope": "markdown",
+    "prefix": "snip.list_unordered",
+    "body": [
+      "- ${1:item_1}",
+      "- ${2:item_2}",
+      "- ${3:item_3}"
+    ],
+    "description": "Markdown syntax to make an unordered list"
+  },
+}
