@@ -1,0 +1,16 @@
+{
+    "Bash Function": {
+      "prefix": ["func"],
+      "body": [ 
+        "${1:function_name}() {",
+        "  local my_first_opt=\"\\$1\"",
+        "  local my_func_var=\"\"",
+        "  echo \"{$my_func_var}\"",
+        "$2",
+        "}",
+        "",
+        ],
+    "scope": "shellscript",
+    "description": "Bash Function"
+  },
+}

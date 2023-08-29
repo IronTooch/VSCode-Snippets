@@ -1,0 +1,111 @@
+{
+    "Test - File Exists": {
+      "prefix": ["test"],
+      "body": [
+          "[[ -e ${1:location_to_test} ]]"
+      ],
+      "scope": "shellscript",
+      "description": "True if file exists"
+    },
+
+    "Test - Is A Directory": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -d ${1:location_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if file exists and is a directory"
+      },
+
+      "Test - Is a Symbolic Link": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -h ${1:location_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if file exists and is a symbolic link"
+      },
+
+      "Test - Is Readable": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -r ${1:location_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if file exists and is readable"
+      },
+
+      "Test - Is Writable": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -w ${1:location_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if file exists and is writeable"
+      },
+
+      "Test - Is Executable": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -x ${1:location_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if file exists and is executable"
+      },
+
+      "Test - Is Bigger than Zero": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -s ${1:location_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if file exists and is bigger than 0 bytes"
+      },
+
+      "Test - Is Variable Has Value Set": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -v ${1:variable_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if variable has been set"
+      },
+
+      "Test - Is String Length Zero": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -z ${1:variable_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if string is length 0"
+      },
+
+      "Test - Is String Length NOT Zero": {
+        "prefix": ["test"],
+        "body": [
+            "[[ -n ${1:variable_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if string is length greater than 0"
+      },
+
+      "Test - Equality": {
+        "prefix": ["test"],
+        "body": [
+            "[[ ${1:variable1_to_test} -eq ${2:variable2_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if variables are equal"
+      },
+
+      "Test - Inequality": {
+        "prefix": ["test"],
+        "body": [
+            "[[ ${1:variable1_to_test} -ne ${2:variable2_to_test} ]]"
+        ],
+        "scope": "shellscript",
+        "description": "True if variables are NOT equal"
+      },
+
+      // Gt, lt, gte, lte
+}

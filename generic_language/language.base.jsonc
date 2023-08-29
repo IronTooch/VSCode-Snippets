@@ -11,7 +11,7 @@
     // 08. Classes
     // 09. Functions
     // 10. Main
-    // 10. Close
+    // 10. Close / Cleanup
     "scope": "language_vscode",
     "prefix": "snip.newfile_single",
     "body": "snippet",

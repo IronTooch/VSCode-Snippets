@@ -1,0 +1,23 @@
+// # strings
+// # Numbers
+// # Arrays
+// # Tuples / Dictionaries
+// # Conversions
+// # Null
+// # Empty String
+// # Multi-line string
+// # List
+
+{
+    "Bash String": {
+      "prefix": ["str"],
+      "body": [ 
+        "${1:my_variable_name}=\"${2:my_variable_value}\"",
+        "$0",
+        ],
+    "scope": "shellscript",
+    "description": "Bash String"
+  },
+
+  
+}

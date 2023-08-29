@@ -1,0 +1,88 @@
+{
+//     "Bash String": {
+//       "prefix": ["str"],
+//       "body": [ 
+//         "${1:my_variable_name}=\"${2:my_variable_value}\"",
+//         "$0",
+//         ],
+//     "scope": "shellscript",
+//     "description": "Bash String"
+//   },
+
+"If": {
+    "prefix": ["if"],
+    "body": [
+      "if MY_TEST; then",
+      "  sleep 1",
+      "fi",
+      "",
+      ""
+    ],
+    "scope": "shellscript",
+    "description": "Bash If"
+  },
+
+  "If-Else": {
+    "prefix": ["if", "if-else"],
+    "body": [
+        "if MY_TEST; then",
+        "  sleep 1",
+        "else",
+        "  sleep 2",
+        "fi",
+    ],
+    "scope": "shellscript",
+    "description": "Bash If-Else"
+  },
+
+  "If-ElseIf-Else": {
+    "prefix": ["if", "if-elif", "elif"],
+    "body": [
+        "if MY_TEST_1; then",
+        "  sleep 1",
+        "elif MY_TEST_2; then",
+        "  sleep 2",
+        "else",
+        "  sleep 3",
+        "fi",
+    ],
+    "scope": "shellscript",
+    "description": "Bash If-ElseIf-Else"
+  },
+
+// case
+
+"While True": {
+    "prefix": ["while", "loop"],
+    "body": [
+        "while MY_TEST_IS_TRUE; do",
+        "  sleep 1",
+        "done",
+    ],
+    "scope": "shellscript",
+    "description": "While test is true, do..."
+  },
+
+  "Until False": {
+    "prefix": ["while", "loop"],
+    "body": [
+        "until MY_TEST_IS_FALSE; do",
+        "  sleep 1",
+        "done",
+    ],
+    "scope": "shellscript",
+    "description": "Until test is false, do..."
+  },
+
+  "For Loop (array)": {
+    "prefix": ["for", "loop"],
+    "body": [
+        "for single_element in list_of_elements; do",
+        "  sleep 1",
+        "done",
+    ],
+    "scope": "shellscript",
+    "description": "For element in elements, do..."
+  },
+  
+}
