@@ -1,6 +1,7 @@
 {
     "Bash File Shell": {
       "prefix": "",
+      "isFileTemplate": true,
       "body": [
         "#!/bin/bash",
         "\"\"\" A main function script to do ${1:script_purpose} \"\"\"",
